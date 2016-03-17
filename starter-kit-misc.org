@@ -1,0 +1,36 @@
+* User details  
+   #+begin_src emacs-lisp
+     (setq user-full-name "Guang")
+     (setq user-mail-address "gtcxg@hotmail.com")
+   #+end_src
+
+* Start-up options
+  #+BEGIN_SRC emacs-lisp
+    (setq inhibit-splash-screen t
+      initial-scratch-message nil
+      initial-major-mode 'org-mode)
+
+    (scroll-bar-mode -1)
+    (tool-bar-mode -1)
+    (menu-bar-mode -1)
+    (linum-mode 1)
+  #+END_SRC
+
+
+
+* backup files
+  #+BEGIN_SRC emacs-lisp
+    (setq backup-directory-alist '(("." . "~/.emacs-backup"))
+      backup-by-copying t    ; Don't delink hardlinks
+      version-control t      ; Use version numbers on backups
+      delete-old-versions t  ; Automatically delete excess backups
+      kept-new-versions 20   ; how many of the newest versions to keep
+      kept-old-versions 5    ; and how many of the old
+      )      
+  #+END_SRC
+
+* yes-or-no question
+  #+BEGIN_SRC emacs-lisp
+  (defalias 'yes-or-no-p 'y-or-n-p)
+  #+END_SRC
+
