@@ -1,0 +1,14 @@
+#+TITLE: Starter Kit Bindings
+#+OPTIONS: toc:nil num:nil ^:nil
+
+This is part of the [[file:starter-kit.org][Emacs Starter Kit]].
+
+* Starter Kit Bindings
+
+Key Bindings.
+
+
+** Align your code in a pretty way.
+#+begin_src emacs-lisp 
+(global-set-key (kbd "C-x \\") 'align-regexp)
+#+end_src

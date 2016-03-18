@@ -16,7 +16,13 @@
     (linum-mode 1)
   #+END_SRC
 
-
+* Path and Execute path
+  #+BEGIN_SRC emacs-lisp
+    (setenv "PATH"
+            (concat "/usr/local/bin/:"
+                    (getenv "PATH")))
+    (setq exec-path (append exec-path '("/usr/local/bin/")))
+  #+END_SRC
 
 * backup files
   #+BEGIN_SRC emacs-lisp

@@ -11,6 +11,11 @@
 (menu-bar-mode -1)
 (linum-mode 1)
 
+(setenv "PATH"
+        (concat "/usr/local/bin/:"
+                (getenv "PATH")))
+(setq exec-path (append exec-path '("/usr/local/bin/")))
+
 (setq backup-directory-alist '(("." . "~/.emacs-backup"))
   backup-by-copying t    ; Don't delink hardlinks
   version-control t      ; Use version numbers on backups
