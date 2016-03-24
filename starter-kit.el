@@ -133,8 +133,10 @@ to your configuration."
 
 (starter-kit-load "starter-kit-bindings.org")
 
+(starter-kit-load "starter-kit-auto-complete.org")
 (starter-kit-load "starter-kit-org.org")
 (starter-kit-load "starter-kit-helm.org")
 (starter-kit-load "starter-kit-c.org")
+(starter-kit-load "starter-kit-web.org")
 
 (starter-kit-load "starter-kit-misc.org")

@@ -162,9 +162,11 @@
   #+END_SRC
 - 主模式配置(mode configuration)
   #+BEGIN_SRC emacs-lisp   
+    (starter-kit-load "starter-kit-auto-complete.org")
     (starter-kit-load "starter-kit-org.org")
     (starter-kit-load "starter-kit-helm.org")
     (starter-kit-load "starter-kit-c.org")
+    (starter-kit-load "starter-kit-web.org")
   #+END_SRC
 - 其他配置(miscellaneous settings)
   #+BEGIN_SRC emacs-lisp
