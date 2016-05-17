@@ -1,0 +1,16 @@
+* Projectile
+** Configuration
+   #+BEGIN_SRC emacs-lisp
+     (projectile-global-mode)
+     (setq projectile-completion-system 'helm)
+     (helm-projectile-on)
+   #+END_SRC
+
+** Usage
+*** helm-projectile C-c p h
+* neotree
+  #+BEGIN_SRC emacs-lisp
+    (require 'neotree)
+    (global-set-key (kbd "C-^") 'neotree-toggle)
+  #+END_SRC
+        

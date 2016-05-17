@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: export post
+# key: Post
+# --
+#+BEGIN_HTML
+---
+layout: post
+title: `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`
+---
+#+END_HTML
+#+OPTIONS: toc:nil
+#+OPTIONS: ^:nil

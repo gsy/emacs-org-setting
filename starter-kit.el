@@ -138,5 +138,6 @@ to your configuration."
 (starter-kit-load "starter-kit-helm.org")
 (starter-kit-load "starter-kit-c.org")
 (starter-kit-load "starter-kit-web.org")
+(starter-kit-load "starter-kit-python.org")
 
 (starter-kit-load "starter-kit-misc.org")

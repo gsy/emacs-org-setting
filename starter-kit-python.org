@@ -1,0 +1,40 @@
+* Project Management - projectile
+  #+BEGIN_SRC emacs-lisp
+    (projectile-global-mode)
+  #+END_SRC
+** key bindings
+   - C-c p f Find file
+   - C-c p p Switch projects
+   - C-c p k Kill buffers
+
+* Jedi
+  The brain
+** install
+   - M-x package-install RET jedi RET
+   - M-x jedi:install-server
+   
+** setup
+*** jedi
+    #+BEGIN_SRC emacs-lisp
+      (require 'jedi)
+
+      (add-to-list 'ac-sources 'ac-sources-jedi-direct)
+
+      (add-hook 'python-mode-hook 'jedi:setup)
+
+      (setq jedi:complete-on-dot t)
+    #+END_SRC
+
+*** pdb
+    #+BEGIN_SRC emacs-lisp
+      (defun annotate-pdb ()
+        (interactive)
+        (highlight-lines-matching-regexp "import ipdb")
+        (highlight-lines-matching-regexp "ipdb.set_trace()"))
+      (add-hook 'python-mode-hook 'annotate-pdb)          
+    #+END_SRC
+
+   
+** usage
+   - C-c . jedi:goto-definition
+   - C-c , jedi:goto-definition-pop-marker

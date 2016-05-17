@@ -1,0 +1,52 @@
+* auto-complete-mode
+** basic config
+** default config
+  #+BEGIN_SRC emacs-lisp    
+    (require 'auto-complete)
+    (require 'auto-complete-config)
+    (ac-config-default)
+  #+END_SRC
+** start complete word length
+   #+BEGIN_SRC emacs-lisp
+    (setq ac-auto-start 2)   
+   #+END_SRC
+** select candidates
+   #+BEGIN_SRC emacs-lisp
+     (setq ac-use-menu-map t)
+     ;; Default settings
+     (define-key ac-menu-map "\C-n" 'ac-next)
+     (define-key ac-menu-map "\C-p" 'ac-previous)
+   #+END_SRC
+   
+** dictionary
+  There is three types of dictionary: user defined dictionary, major mode dictionary, and extension dictionary. 
+  - user defined dictionary
+    #+BEGIN_SRC emacs-lisp
+    (add-to-list 'ac-user-dictionary "gtcxg@hotmail.com")
+    #+END_SRC
+  - major mode dictionary
+    #+BEGIN_SRC emacs-lisp
+    (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+    #+END_SRC
+    As same as user defined dictionary, after editing and adding dictionary, you should do M-x ac-clear-dictionary-cache to apply changes.
+
+
+
+* yasnippet
+  #+BEGIN_SRC emacs-lisp
+    (require 'yasnippet)
+    (yas-global-mode 1)      
+  #+END_SRC
+** snippit directory
+   #+BEGIN_SRC emacs-lisp
+   (setq yas-snippet-dirs
+      '("~/.emacs.d/snippets"                 ;; personal snippets
+        ))
+   #+END_SRC
+
+
+
+
+
+
+  

@@ -167,6 +167,7 @@
     (starter-kit-load "starter-kit-helm.org")
     (starter-kit-load "starter-kit-c.org")
     (starter-kit-load "starter-kit-web.org")
+    (starter-kit-load "starter-kit-python.org")
   #+END_SRC
 - 其他配置(miscellaneous settings)
   #+BEGIN_SRC emacs-lisp

@@ -1,0 +1,1 @@
+("~/.emacs.d/" "/usr/local/" "~/code/source/tornado/" "~/code/python/flask/hello/" "~/blog/")
