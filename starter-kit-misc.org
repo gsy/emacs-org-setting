@@ -16,6 +16,16 @@
     (linum-mode 1)
   #+END_SRC
 
+<<<<<<< HEAD
+=======
+* Path and Execute path
+  #+BEGIN_SRC emacs-lisp
+    (setenv "PATH"
+            (concat "/usr/local/bin/:"
+                    (getenv "PATH")))
+    (setq exec-path (append exec-path '("/usr/local/bin/")))
+  #+END_SRC
+>>>>>>> 74a8a6372c7027270d2d936888d04275fc62e45d
 
 * backup files
   #+BEGIN_SRC emacs-lisp
@@ -33,6 +43,7 @@
   (defalias 'yes-or-no-p 'y-or-n-p)
   #+END_SRC
 
+<<<<<<< HEAD
 * font
   #+BEGIN_SRC emacs-lisp
     (set-fontset-font "fontset-default" 'han '("STHeiti"))
@@ -48,3 +59,16 @@
              (split-string-and-unquote path ":")
              exec-path)))
   #+END_SRC
+=======
+* multiple-cursor
+** Basic Usage
+  #+BEGIN_SRC emacs-lisp
+    (require 'multiple-cursors)
+
+    (global-set-key (kbd "C->") 'mc/mark-next-like-this)
+    (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+    (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+  #+END_SRC
+   
+  
+>>>>>>> 74a8a6372c7027270d2d936888d04275fc62e45d

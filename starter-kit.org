@@ -123,12 +123,60 @@
                partial-file)
            file))))
   #+end_src
+<<<<<<< HEAD
 
 - 快捷键(key bindings)
 - 主模式配置(mode configuration)
   #+BEGIN_SRC emacs-lisp
   (starter-kit-load "starter-kit-org.org")
   (starter-kit-load "starter-kit-helm.org")
+=======
+  
+  #+BEGIN_SRC emacs-lisp
+    (cl-flet ((sk-load (base)
+             (let* ((path          (expand-file-name base starter-kit-dir))
+                    (literate      (concat path ".org"))
+                    (encrypted-org (concat path ".org.gpg"))
+                    (plain         (concat path ".el"))
+                    (encrypted-el  (concat path ".el.gpg")))
+               (cond
+                ((file-exists-p encrypted-org) (org-babel-load-file encrypted-org))
+                ((file-exists-p encrypted-el)  (load encrypted-el))
+                ((file-exists-p literate)      (org-babel-load-file literate))
+                ((file-exists-p plain)         (load plain)))))
+           (remove-extension (name)
+             (string-match "\\(.*?\\)\.\\(org\\(\\.el\\)?\\|el\\)\\(\\.gpg\\)?$" name)
+             (match-string 1 name)))
+      (let ((user-dir (expand-file-name user-login-name starter-kit-dir)))
+        ;; load system-specific config
+        (sk-load system-name)
+        ;; load user-specific config
+        (sk-load user-login-name)
+        ;; load any files in the user's directory
+        (when (file-exists-p user-dir)
+          (add-to-list 'load-path user-dir)
+          (mapc #'sk-load
+                (remove-duplicates
+                 (mapcar #'remove-extension
+                         (directory-files user-dir t ".*\.\\(org\\|el\\)\\(\\.gpg\\)?$"))
+                 :test #'string=)))))
+  #+END_SRC
+
+
+* 配置实践
+- 快捷键(key bindings)
+  #+BEGIN_SRC emacs-lisp
+    (starter-kit-load "starter-kit-bindings.org")
+  #+END_SRC
+- 主模式配置(mode configuration)
+  #+BEGIN_SRC emacs-lisp   
+    (starter-kit-load "starter-kit-auto-complete.org")
+    (starter-kit-load "starter-kit-org.org")
+    (starter-kit-load "starter-kit-helm.org")
+    (starter-kit-load "starter-kit-c.org")
+    (starter-kit-load "starter-kit-web.org")
+    (starter-kit-load "starter-kit-python.org")
+>>>>>>> 74a8a6372c7027270d2d936888d04275fc62e45d
   #+END_SRC
 - 其他配置(miscellaneous settings)
   #+BEGIN_SRC emacs-lisp

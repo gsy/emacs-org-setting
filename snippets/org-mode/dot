@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: graphviz draw
+# key: dot
+# --
+#+BEGIN_SRC dot :file ${1:test.png} :cmdline -Kdot -Tpng
+$0
+
+#+END_SRC
