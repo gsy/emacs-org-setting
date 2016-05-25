@@ -1,23 +1,33 @@
+/Users/guang/blog/org/draft/python调试.org
+/Users/guang/blog/org/draft/#python调试.org#
+/Users/guang/code/python/learning/test_pdb.py
+/Users/guang/code/python/learning/#test_pdb.py#
+/usr/local/bin/pdb.py
+/usr/local/bin/#pdb.py#
+/Applications/Emacs.app/Contents/Resources/lisp/progmodes/gud.el.gz
+/Applications/Emacs.app/Contents/Resources/lisp/progmodes/#gud.el.gz#
+/usr/local/bin/pdb
+/usr/local/bin/#pdb#
+/Users/guang/.zshrc
+/Users/guang/#.zshrc#
+/Users/guang/Downloads/pdb.py
+/Users/guang/Downloads/#pdb.py#
 /Users/guang/.emacs.d/init.el
 /Users/guang/.emacs.d/#init.el#
+/Users/guang/blog/org/draft/tornado源码阅读.org
+/Users/guang/blog/org/draft/#tornado源码阅读.org#
 /Users/guang/.emacs~
 /Users/guang/#.emacs~#
 /Users/guang/code/source/tornado/tornado/gen.py
 /Users/guang/code/source/tornado/tornado/#gen.py#
-/Users/guang/blog/org/draft/tornado源码阅读.org
-/Users/guang/blog/org/draft/#tornado源码阅读.org#
 /Users/guang/code/python/tornado/demo/main.py
 /Users/guang/code/python/tornado/demo/#main.py#
-/Applications/Emacs.app/Contents/Resources/lisp/progmodes/gud.el.gz
-/Applications/Emacs.app/Contents/Resources/lisp/progmodes/#gud.el.gz#
 /Users/guang/code/python/learning/test.py
 /Users/guang/code/python/learning/#test.py#
 /Users/guang/code/emacs lisp/hello.el
 /Users/guang/code/emacs lisp/#hello.el#
 /usr/local/bin/pdb
 /usr/local/bin/#pdb#
-/Users/guang/.zshrc
-/Users/guang/#.zshrc#
 /Users/guang/.emacs.d/starter-kit-python.org
 /Users/guang/.emacs.d/#starter-kit-python.org#
 /Users/guang/.emacs.d/snippets/pdb
@@ -56,3 +66,5 @@
 /Library/Python/2.7/site-packages/tornado/#__init__.py#
 /Users/guang/blog/org/draft/oauth_protocol_flow.png
 /Users/guang/blog/org/draft/#oauth_protocol_flow.png#
+/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/bdb.py
+/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/#bdb.py#

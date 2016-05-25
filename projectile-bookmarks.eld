@@ -1,1 +1,1 @@
-("~/.emacs.d/" "/usr/local/" "~/code/source/tornado/" "~/code/python/flask/hello/" "~/blog/")
+("~/.emacs.d/" "/usr/local/" "~/blog/" "~/code/source/tornado/" "~/code/python/flask/hello/")
