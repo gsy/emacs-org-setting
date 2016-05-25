@@ -1,2 +1,7 @@
+# git
 .git
-emacs-org-setting
+
+# emacs
+auto-save-list/
+emacs-org-setting/
+
